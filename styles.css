@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  background: #0a0a0a;
+  font-family: system-ui, sans-serif;
+  color: white;
+}
+
+    /* Entry "flash in" animation for the hero section */
+    @keyframes flashIn {
+      0% { opacity: 0; transform:  scale(1); filter: blur(8px) brightness(.8); }
+      40% { opacity: 1; transform:  scale(1.1); filter: blur(0) brightness(1.6); }
+      100% { opacity: 1; transform: scale(1); filter: none; }
+    }
+    .flash-in { animation: flashIn 1s cubic-bezier(.2,.9,.3,1) 0s 1 forwards; }
+
+    /* Blinking name for a few seconds (duration = iterations * animation-duration) */
+    @keyframes blink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    /* 6 iterations * 0.5s = 3s of blinking, then stays visible */
+    .blink { animation: blink .4s linear 0s 3 forwards; display: inline-block; }
+    
+    /* Continuous glowing/pulsing logo */
+    .logo-glow {
+      animation: pulseGlow 2s infinite alternate;
+    }
+    @keyframes pulseGlow {
+      0%   { filter: drop-shadow(0 0 10px #0078D4); }
+      33%  { filter: drop-shadow(0 0 10px #FFB900); }
+      66% { filter: drop-shadow(0 0 10px #AE4B2F); }
+      100% { filter: drop-shadow(0 0 10px #679023); }
+    }

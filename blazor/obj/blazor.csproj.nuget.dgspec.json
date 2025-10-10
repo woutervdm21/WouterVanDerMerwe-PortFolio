@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WVanDer\\Portfolio\\blazor\\blazor.csproj": {}
+    "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WVanDer\\Portfolio\\blazor\\blazor.csproj": {
+    "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WVanDer\\Portfolio\\blazor\\blazor.csproj",
+        "projectUniqueName": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
         "projectName": "blazor",
-        "projectPath": "C:\\Users\\WVanDer\\Portfolio\\blazor\\blazor.csproj",
+        "projectPath": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
         "packagesPath": "C:\\Users\\WVanDer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WVanDer\\Portfolio\\blazor\\obj\\",
+        "outputPath": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

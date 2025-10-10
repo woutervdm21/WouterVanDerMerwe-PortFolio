@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MnkVF8hwOGc=",
+  "dgSpecHash": "/ds3M0Srn5o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\WVanDer\\Portfolio\\blazor\\blazor.csproj",
+  "projectFilePath": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WVanDer\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.7\\microsoft.aspnetcore.authorization.9.0.7.nupkg.sha512",
     "C:\\Users\\WVanDer\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.7\\microsoft.aspnetcore.components.9.0.7.nupkg.sha512",
