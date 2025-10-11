@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   faders.forEach(fader => appearOnScroll.observe(fader));
 });
 
+<<<<<<< HEAD
     
 particlesJS('particles-js', {
   "particles": {
@@ -88,3 +89,6 @@ particlesJS('particles-js', {
   },
   "retina_detect": true
 });
+=======
+    
+>>>>>>> f0c25b7dd3f2d0071ea5ac2b5adc4b9df69925ae

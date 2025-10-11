@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Wouter vdm\\Portfolio\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\Wouter vdm\\Portfolio\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
         "packagesPath": "C:\\Users\\Wouter vdm\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Wouter vdm\\Portfolio\\WouterVanDerMerwe-PortFolio\\blazor\\obj\\",
+=======
+    "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
+        "projectName": "blazor",
+        "projectPath": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
+        "packagesPath": "C:\\Users\\WVanDer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\obj\\",
+>>>>>>> f0c25b7dd3f2d0071ea5ac2b5adc4b9df69925ae
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Wouter vdm\\AppData\\Roaming\\NuGet\\NuGet.Config"
