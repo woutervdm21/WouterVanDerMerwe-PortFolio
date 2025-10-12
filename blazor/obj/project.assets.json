@@ -1762,19 +1762,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Wouter vdm\\Portfolio\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
       "projectName": "blazor",
       "projectPath": "C:\\Users\\Wouter vdm\\Portfolio\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
       "packagesPath": "C:\\Users\\Wouter vdm\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Wouter vdm\\Portfolio\\WouterVanDerMerwe-PortFolio\\blazor\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
-      "projectName": "blazor",
-      "projectPath": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\blazor.csproj",
-      "packagesPath": "C:\\Users\\WVanDer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WVanDer\\WouterVanDerMerwe-PortFolio\\blazor\\obj\\",
->>>>>>> f0c25b7dd3f2d0071ea5ac2b5adc4b9df69925ae
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Wouter vdm\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1859,5 +1851,13 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Wouter vdm\\Portfolio\\WouterVanDerMerwe-PortFolio\\blazor\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }

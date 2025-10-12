@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+  <!-- Page metadata and external libraries -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wouter's Portfolio</title>
@@ -13,6 +14,7 @@
 </head>
 <body class="dark:bg-slate-900 dark:text-white relative overflow-x-hidden theme-transition">
 
+  <!-- Theme toggle button -->
   <div class="fixed top-4 right-4 z-50">
     <button
       onclick="toggleTheme()"
@@ -27,7 +29,9 @@
     </button>
   </div>
 
+  <!-- Hero / Intro section -->
   <section class="bg-gradient-to-br from-sky-200 to-sky-400 dark:from-slate-700 dark:to-slate-900 text-slate-900 dark:text-white relative h-screen flex flex-col justify-center items-center flash-in theme-transition">
+    <!-- Particles background -->
     <div id="particles-js" class="absolute top-0 left-0 w-full h-full -z-10"></div>
 
     <img src="img/Microsoft.png" alt="Microsoft Logo" class="w-32 mx-auto logo-glow mb-8 opacity-70 dark:opacity-60 hover:scale-105 hover:opacity-100 dark:hover:opacity-90 transition-all duration-300">
@@ -58,25 +62,26 @@
     </div>
   </section>
 
+  <!-- About section -->
   <section id="about-section" class="bg-amber-50 dark:bg-slate-500 text-black dark:text-white relative py-5">
     <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center p-6">
       <figure class="fade-in opacity-0 translate-y-8 transition md:col-span-1 flex justify-center">
-        <div class="w-64 h-64 md:w-72 md:h-72 rounded-xl overflow-hidden shadow-lg border-4 border-sky-300 dark:border-slate-300">
+        <div class="w-64 h-64 md:w-72 md:h-72 rounded-xl overflow-hidden shadow-lg border-4 border-slate-500 dark:border-slate-300">
           <img src="img/ProfilePic.jpg" alt="Wouter van der Merwe" class="w-full h-full object-cover object-top">
         </div>
       </figure>
 
-      <div class="md:col-span-2">
+      <div class="p-3  md:col-span-2">
         <h2 class="text-slate-800 dark:text-white fade-in opacity-0 translate-y-8 transition duration-700 text-3xl font-bold mb-4">Who am I?</h2>
 
         <p class="text-slate-800 dark:text-white fade-in opacity-0 translate-y-8 transition duration-700 mb-4">
-          I’m Wouter van der Merwe — a versatile Software & Data Developer passionate about building web and software applications.
-          I focus on writing clean, maintainable code and crafting user-centric designs that deliver seamless experiences across the full stack.
-          From concept to production, I handle it all — planning, designing elegant UIs, building performant APIs, and optimizing SQL queries for maximum efficiency.
+          I’m Wouter van der Merwe — a versatile Software & System Developer passionate about building web and software systems.
+          I focus on writing clean, maintainable code and crafting user-centric designs that meet the system specifications and requirements.
+          From concept to production, I handle it all — planning, designing elegant UIs, building performant APIs, optimizing SQL queries and building reports for maximum efficiency.
         </p>
 
         <p class="text-slate-800 dark:text-white fade-in opacity-0 translate-y-8 transition duration-700 mb-6">
-          My work spans front-end engineering, accessible UI, responsive design, and backend development.
+          My work spans front-end development, accessible UI, responsive design, and backend development.
           I thrive in collaborative environments, enjoy learning new technologies, and embrace challenges that push my skills further.
           I’m on a mission to become a top Microsoft Full-Stack Developer — and I’m excited about the journey ahead!
         </p>
@@ -84,112 +89,337 @@
     </div>
   </section>
 
-  <section class="bg-sky-200 dark:bg-slate-900 text-slate-800 dark:text-white relative py-5">
+  <!-- Tech Stack section -->
+  <section class="bg-sky-200 dark:bg-slate-900 text-slate-800 dark:text-white relative py-10 pb-32">
     <div class="max-w-5xl mx-auto space-y-12">
       <div class="fade-in opacity-0 translate-y-8 transition duration-700">
-        <h2 class="text-4xl font-bold mb-4 text-slate-800 dark:text-white">Tech Stack</h2>
-        <h3 class="text-3xl font-semibold mb-3 inline-block px-4 py-2 text-green-800 dark:text-green-300 rounded-r-lg shadow-sm">
-          <span class="flex items-center font-bold">Proficient</span>
-        </h3>
+          <img class="mb-5 px-3 w-50 h-8 block mx-auto" src="img/Proficient L.png" alt="Proficient" />
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
+          <div class="bg-green-100 dark:bg-emerald-900 p-5 rounded-2xl shadow-md">
             <div class="flex items-center gap-3">
               <img src="img/HTML5.png" alt="HTML5" class="w-16 h-16" />
               <div>
                 <p class="text-slate-800 dark:text-amber-50 font-semibold">HTML <span class="text-green-800 dark:text-green-300">●●●●●</span></p>
-                <p class="text-slate-800 dark:text-amber-50 text-sm">Semantic Markup · Accessibility · SEO</p>
+                <p class="text-slate-800 dark:text-amber-50 text-sm">Semantic Markup • Accessibility • SEO</p>
               </div>
             </div>
           </div>
 
-          <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
+          <div class="bg-green-100 dark:bg-emerald-900 p-5 rounded-2xl shadow-md">
             <div class="flex items-center gap-3">
               <img src="img/CSS3.png" alt="CSS3" class="w-16 h-16" />
               <div>
                 <p class="text-slate-800 dark:text-amber-50 font-semibold">CSS3 <span class="text-green-800 dark:text-green-300">●●●●●</span></p>
-                <p class="text-slate-800 dark:text-amber-50 text-sm">Flexbox · Grid · Animations</p>
+                <p class="text-slate-800 dark:text-amber-50 text-sm">Flexbox • Grid • Animations</p>
               </div>
             </div>
           </div>
 
-          <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
+          <div class="bg-green-100 dark:bg-emerald-900 p-5 rounded-2xl shadow-md">
             <div class="flex items-center gap-3">
               <img src="img/JS.png" alt="JavaScript" class="w-16 h-16" />
               <div>
                 <p class="text-slate-800 dark:text-amber-50 font-semibold">JavaScript <span class="text-green-800 dark:text-green-300">●●●●○</span></p>
-                <p class="text-slate-800 dark:text-amber-50 text-sm">ES6 · Async/Await · DOM Manipulation</p>
+                <p class="text-slate-800 dark:text-amber-50 text-sm">Async/Await • DOM Manipulation</p>
               </div>
             </div>
           </div>
 
-          <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
+          <div class="bg-green-100 dark:bg-emerald-900 p-5 rounded-2xl shadow-md">
             <div class="flex items-center gap-3">
-              <img src="img/SQL.svg" alt="SQL" class="w-16 h-16" />
+              <img src="img/SQL.png" alt="SQL" class="w-16 h-16" />
               <div>
                 <p class="text-slate-800 dark:text-amber-50 font-semibold">SQL <span class="text-green-800 dark:text-green-300">●●●●●</span></p>
-                <p class="text-slate-800 dark:text-amber-50 text-sm">Stored Procedures · Queries · Optimization</p>
+                <p class="text-slate-800 dark:text-amber-50 text-sm">SSRS • SSMS • Stored Procedures • Queries • Optimization</p>
               </div>
             </div>
           </div>
 
-          <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
+          <div class="bg-green-100 dark:bg-emerald-900 p-5 rounded-2xl shadow-md">
             <div class="flex items-center gap-3">
               <img src="img/PowerBI.png" alt="Power BI" class="w-16 h-16" />
               <div>
                 <p class="text-slate-800 dark:text-amber-50 font-semibold">Power BI <span class="text-green-800 dark:text-green-300">●●●●○</span></p>
-                <p class="text-slate-800 dark:text-amber-50 text-sm">Data Modeling · DAX · Power Query</p>
+                <p class="text-slate-800 dark:text-amber-50 text-sm">Data Modeling • DAX • Integration</p>
               </div>
             </div>
           </div>
 
-          <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
+          <div class="bg-green-100 dark:bg-emerald-900 p-5 rounded-2xl shadow-md">
             <div class="flex items-center gap-3">
-              <img src="img/CSharp.png" alt="CSharp" class="w-16 h-16" />
+              <img src="img/VSCode.png" alt="VSCode" class="w-16 h-16" />
               <div>
-                <p class="text-slate-800 dark:text-amber-50 font-semibold">CSharp <span class="text-green-800 dark:text-green-300">●●●●○</span></p>
-                <p class="text-slate-800 dark:text-amber-50 text-sm">Queries · Stored Procs · Optimization</p>
+                <p class="text-slate-800 dark:text-amber-50 font-semibold">VSCode<span class="text-green-800 dark:text-green-300">●●●●○</span></p>
+                <p class="text-slate-800 dark:text-amber-50 text-sm">Extensions • Debugging • Git Integration</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-green-100 dark:bg-emerald-900 p-5 rounded-2xl shadow-md">
+            <div class="flex items-center gap-3">
+              <img src="img/Copilot.png" alt="Copilot" class="w-16 h-16" />
+              <div>
+                <p class="text-slate-800 dark:text-amber-50 font-semibold">Copilot <span class="text-green-800 dark:text-green-300">●●●●○</span></p>
+                <p class="text-slate-800 dark:text-amber-50 text-sm">AI Pair Programmer • Code Suggestions • Error Detection</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="fade-in opacity-0 translate-y-8 transition duration-700 mt-6">
-          <h3 class="bg-gradient-to-r from-yellow-50 to-yellow-100 dark:from-amber-900/30 dark:to-amber-800/30 text-yellow-700 dark:text-amber-300 text-2xl font-semibold mb-3 inline-block px-4 py-2 rounded-r-lg shadow-sm border-l-4 border-yellow-600 dark:border-amber-400">
-            <span class="flex items-center">
-              Comfortable
-            </span>
-          </h3>
+          <img class="mb-5 px-3 w-50 h-8 block mx-auto" src="img/Comfortable L.png" alt="Comfortable" />
 
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
-            <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
-              <p class="text-slate-800 dark:text-amber-50 font-semibold">React <span class="text-yellow-700 dark:text-amber-300">●●●○○</span></p>
-              <p class="text-slate-800 dark:text-amber-50 text-sm">Hooks · State Mgmt · Vite</p>
+
+            <div class="bg-amber-100 dark:bg-orange-900 p-5 rounded-2xl shadow-md">
+              <div class="flex items-center gap-3">
+                <img src="img/CSharp.png" alt="CSharp" class="w-16 h-16" />
+                <div>
+                  <p class="text-slate-800 dark:text-amber-50 font-semibold">CSharp <span class="text-yellow-700 dark:text-amber-300">●●●○○</span></p>
+                  <p class="text-slate-800 dark:text-amber-50 text-sm">OOP • Async/Await • Polymorphism • Interfaces</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="bg-amber-100 dark:bg-orange-900 p-5 rounded-2xl shadow-md">
+              <div class="flex items-center gap-3">
+                <img src="img/TailwindCSS.png" alt="Tailwind CSS" class="w-16 h-16" />
+                <div>
+                  <p class="text-slate-800 dark:text-amber-50 font-semibold">Tailwind CSS <span class="text-yellow-700 dark:text-amber-300">●●●○○</span></p>
+                  <p class="text-slate-800 dark:text-amber-50 text-sm">Responsive Design • Dark Mode</p>
+                </div>
+              </div>
             </div>
 
-            <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
-              <p class="text-slate-800 dark:text-amber-50 font-semibold">Tailwind CSS <span class="text-yellow-700 dark:text-amber-300">●●●○○</span></p>
-              <p class="text-slate-800 dark:text-amber-50 text-sm">Responsive Design · Dark Mode</p>
-            </div>
-
-            <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
-              <p class="text-slate-800 dark:text-amber-50 font-semibold">Azure Functions <span class="text-yellow-700 dark:text-amber-300">●●●○○</span></p>
-              <p class="text-slate-800 dark:text-amber-50 text-sm">Serverless Apps · Storage Triggers</p>
+            <div class="bg-amber-100 dark:bg-orange-900 p-5 rounded-2xl shadow-md">
+              <div class="flex items-center gap-3">
+                <img src="img/Git.png" alt="Git" class="w-16 h-16" />
+                <div>
+                  <p class="text-slate-800 dark:text-amber-50 font-semibold">Git <span class="text-yellow-700 dark:text-amber-300">●●●○○</span></p>
+                  <p class="text-slate-800 dark:text-amber-50 text-sm">Version Control • Branching • Merging</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="fade-in opacity-0 translate-y-8 transition duration-700 mt-6">
-          <h3 class="text-2xl font-semibold text-rose-700 dark:text-rose-300 mb-3">Learning</h3>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
-              <p class="text-slate-800 dark:text-amber-50 font-semibold">Docker <span class="text-rose-700 dark:text-rose-300">●●○○○</span></p>
-              <p class="text-slate-800 dark:text-amber-50 text-sm">Containers · Image Mgmt</p>
+          <img class="mb-5 px-3 w-50 h-10 block mx-auto" src="img/Learning L.png" alt="Learning" />
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 mb-4">
+
+            <div class="bg-rose-100 dark:bg-red-900 p-5 rounded-2xl shadow-md">
+              <div class="flex items-center gap-3">
+                <img src="img/azure.png" alt="Azure" class="w-16 h-16" />
+                <div>
+                  <p class="text-slate-800 dark:text-amber-50 font-semibold">Azure <span class="text-rose-700 dark:text-rose-300">●○○○○</span></p>
+                  <p class="text-slate-800 dark:text-amber-50 text-sm">Cloud Services • ADF • Databases • AI/ML</p>
+                </div>
+              </div>
             </div>
 
-            <div class="bg-amber-50 dark:bg-slate-500 p-5 rounded-2xl shadow-md">
-              <p class="text-slate-800 dark:text-amber-50 font-semibold">GitHub Actions <span class="text-rose-700 dark:text-rose-300">●●○○○</span></p>
-              <p class="text-slate-800 dark:text-amber-50 text-sm">CI/CD Pipelines · Workflows</p>
+            <div class="bg-rose-100 dark:bg-red-900 p-5 rounded-2xl shadow-md">
+              <div class="flex items-center gap-3">
+                <img src="img/blazor.png" alt="Blazor" class="w-16 h-16" />
+                <div>
+                  <p class="text-slate-800 dark:text-amber-50 font-semibold">Blazor <span class="text-rose-700 dark:text-rose-300">●○○○○</span></p>
+                  <p class="text-slate-800 dark:text-amber-50 text-sm">WebAssembly • C# • SPA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-rose-100 dark:bg-red-900 p-5 rounded-2xl shadow-md">
+              <div class="flex items-center gap-3">
+                <img src="img/docker.png" alt="Docker" class="w-16 h-16" />
+                <div>
+                  <p class="text-slate-800 dark:text-amber-50 font-semibold">Docker <span class="text-rose-700 dark:text-rose-300">●○○○○</span></p>
+                  <p class="text-slate-800 dark:text-amber-50 text-sm">Containerization • DevOps • Microservices</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <!-- Education & Portfolio section -->
+  <section class="bg-amber-50 dark:bg-slate-500 text-slate-800 dark:text-white relative py-5">
+    <div class="max-w-5xl mx-auto px-6">
+      <!-- Cards pulled up to overlap the previous section -->
+      <div class="grid md:grid-cols-2 gap-8 -mt-20 md:-mt-20 relative z-20">
+        <!-- Education & Certifications Card -->
+        <div class="bg-white dark:bg-slate-700 p-4 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-3 flex items-center gap-3">
+            <svg class="w-6 h-6 text-amber-600 dark:text-amber-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+            </svg>
+            Education & Certifications
+          </h3>
+
+          <div class="space-y-6">
+            <!-- Education -->
+            <div>
+              <h4 class="font-semibold text-lg mb-3 text-blue-600 dark:text-blue-400">Education</h4>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3 p-3 bg-green-50 dark:bg-green-900/30 rounded-lg border border-green-200 dark:border-green-800">
+                  <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  <span class="font-medium">NSC + Maths and Science</span>
+                </div>
+
+                <div class="flex items-center gap-3 p-3 bg-green-50 dark:bg-green-900/30 rounded-lg border border-green-200 dark:border-green-800">
+                  <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  <span class="font-medium">UNISA Diploma in Information Technology</span>
+                </div>
+
+                <div class="flex items-center gap-3 p-3 bg-green-50 dark:bg-green-900/30 rounded-lg border border-green-200 dark:border-green-800">
+                  <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  <span class="font-medium">UNISA Advanced Diploma in Information Resource Management</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certifications -->
+            <div>
+              <h4 class="font-semibold text-lg mb-3 text-blue-600 dark:text-blue-400">Certifications</h4>
+              <div class="space-y-3">
+                <div class="bg-amber-50 dark:bg-amber-900/30 rounded-lg border border-amber-200 dark:border-amber-800 p-3">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-5 h-5 bg-amber-500 dark:bg-amber-400 rounded-full flex items-center justify-center">
+                      <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                    </div>
+                    <span class="font-medium flex-1">COURSERA - Microsoft Full-Stack Developer</span>
+                    <span class="text-sm text-amber-600 dark:text-amber-400 whitespace-nowrap">In Progress</span>
+                  </div>
+
+                  <div class="ml-8 space-y-2 text-sm">
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full"></div>
+                      <span>Foundations of Coding Full-Stack</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full"></div>
+                      <span>Introduction to Programming with C#</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full"></div>
+                      <span>Introduction to Web Development</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-amber-500 dark:bg-amber-400 rounded-full animate-pulse"></div>
+                      <span>Blazor for Front-End Development</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                      <span>Back-End Development with .Net</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                      <span>Database Integration and Management</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                      <span>Full-Stack Integration</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                      <span>Security and Authentication</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                      <span>Performance Optimization and Scalability</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                      <span>Data Structures and Algorithms</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                      <span>Deployment and DevOps</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="w-2 h-2 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                      <span>Full-Stack Developer Capstone Project</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 p-3 bg-amber-50 dark:bg-amber-900/30 rounded-lg border border-amber-200 dark:border-amber-800">
+                  <div class="w-5 h-5 bg-amber-500 dark:bg-amber-400 rounded-full flex items-center justify-center">
+                    <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                  </div>
+                  <span class="font-medium flex-1">Azure Fundamentals (AZ-900)</span>
+                  <span class="text-sm text-amber-600 dark:text-amber-400 whitespace-nowrap">In Progress</span>
+                </div>
+
+                <div class="flex items-center gap-3 p-3 bg-gray-50 dark:bg-slate-600 rounded-lg border border-gray-200 dark:border-slate-500">
+                  <div class="w-5 h-5 border-2 border-gray-400 dark:border-gray-300 rounded"></div>
+                  <span class="flex-1">Azure Developer Associate (AZ-204)</span>
+                  <span class="text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap">Planned</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects & Portfolio Card -->
+        <div class="bg-white dark:bg-slate-700 p-4 rounded-xl shadow-lg">
+          <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+            <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1"/>
+              <rect x="3" y="6" width="18" height="14" rx="2"/>
+              <path d="M3 12h18"/>
+              <rect x="7" y="14" width="4" height="4" rx="1"/>
+              <rect x="13" y="14" width="4" height="4" rx="1"/>
+            </svg>
+            Projects & Portfolio
+          </h3>
+
+          <div class="space-y-4">
+            <div class="p-4 bg-green-50 dark:bg-green-900/30 rounded-lg border border-green-200 dark:border-green-800">
+              <h4 class="font-semibold text-green-700 dark:text-green-300 mb-2">Portfolio Website</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Personal portfolio built with HTML, CSS, Tailwind CSS, JavaScript and hosted on Azure.</p>
+              <div class="flex gap-2 flex-wrap">
+                <span class="px-2 py-1 bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-200 text-xs rounded">HTML</span>
+                <span class="px-2 py-1 bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-200 text-xs rounded">CSS</span>
+                <span class="px-2 py-1 bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-200 text-xs rounded">JavaScript</span>
+                <span class="px-2 py-1 bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-200 text-xs rounded">TailwindCSS</span>
+                <span class="px-2 py-1 bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-200 text-xs rounded">Azure Static Web Apps</span>
+              </div>
+              <div class="flex items-center gap-2 mt-2">
+                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+                <span class="text-xs text-green-600 dark:text-green-400 font-medium">Completed</span>
+              </div>
+            </div>
+
+            <div class="p-4 bg-amber-50 dark:bg-amber-900/30 rounded-lg border border-amber-200 dark:border-amber-800">
+              <h4 class="font-semibold text-amber-700 dark:text-amber-300 mb-2">Blazor Web Application</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Full-stack web app using Blazor WebAssembly</p>
+              <div class="flex gap-2">
+                <span class="px-2 py-1 bg-amber-100 dark:bg-amber-800 text-amber-700 dark:text-amber-200 text-xs rounded">C#</span>
+                <span class="px-2 py-1 bg-amber-100 dark:bg-amber-800 text-amber-700 dark:text-amber-200 text-xs rounded">Blazor</span>
+                <span class="px-2 py-1 bg-amber-100 dark:bg-amber-800 text-amber-700 dark:text-amber-200 text-xs rounded">.Net</span>
+              </div>
+              <span class="text-xs text-amber-600 dark:text-amber-400 mt-2 block">In Development</span>
+            </div>
+
+            <div class="p-4 bg-gray-50 dark:bg-slate-600 rounded-lg border border-gray-200 dark:border-slate-500">
+              <h4 class="font-semibold text-gray-700 dark:text-gray-300 mb-2">Business Intelligence Dashboard</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">SQL Server + Power BI reporting solution</p>
+              <div class="flex gap-2"></div>
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs rounded">SQL</span>
+                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs rounded">Power BI</span>
+              </div>
+              <span class="text-xs text-amber-600 dark:text-amber-400 mt-2 block">Planned</span>
             </div>
           </div>
         </div>
@@ -197,26 +427,116 @@
     </div>
   </section>
 
-  <section class="bg-slate-800 text-white relative py-20">
-    <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
-    <div id="blazor-projects" class="max-w-5xl mx-auto p-6 bg-slate-700 rounded-lg shadow-lg">
-      <app-project-filter></app-project-filter>
+  <!-- Contact section -->
+  <section class="bg-sky-300 dark:bg-slate-900 text-slate-800 dark:text-white relative py-10">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="fade-in opacity-0 translate-y-8 transition duration-700 text-3xl font-bold text-center mb-6">Let's get in Contact!</h2>
+      
+      <div class="fade-in opacity-0 translate-y-8 transition duration-700 bg-white dark:bg-slate-700 p-8 rounded-xl shadow-lg">
+        <form class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-medium mb-2">Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-sky-500 dark:focus:ring-amber-400 focus:border-transparent bg-white dark:bg-slate-600 text-slate-900 dark:text-white transition-colors"
+                placeholder="Your full name"
+              />
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium mb-2">Email *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-sky-500 dark:focus:ring-amber-400 focus:border-transparent bg-white dark:bg-slate-600 text-slate-900 dark:text-white transition-colors"
+                placeholder="your.email@example.com"
+              />
+            </div>
+          </div>
+          
+          <div>
+            <label for="subject" class="block text-sm font-medium mb-2">Subject *</label>
+            <select 
+              id="subject" 
+              name="subject" 
+              required 
+              class="w-full px-4 py-3 border border-gray-300 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-sky-500 dark:focus:ring-amber-400 focus:border-transparent bg-white dark:bg-slate-600 text-slate-900 dark:text-white transition-colors"
+            >
+              <option value="">Select a topic...</option>
+              <option value="job-opportunity">Job Opportunity</option>
+              <option value="freelance-project">Freelance Project</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="question">General Question</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="message" class="block text-sm font-medium mb-2">Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="5" 
+              required 
+              class="w-full px-4 py-3 border border-gray-300 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-sky-500 dark:focus:ring-amber-400 focus:border-transparent bg-white dark:bg-slate-600 text-slate-900 dark:text-white transition-colors resize-vertical"
+              placeholder="Tell me about your project, opportunity, or question..."
+            ></textarea>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-4 items-center justify-between">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <span class="text-sm text-gray-600 dark:text-gray-300">Usually responds within 24 hours</span>
+            </div>
+            
+            <button 
+              type="submit" 
+              class="bg-sky-600 hover:bg-sky-700 dark:bg-amber-500 dark:hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              </svg>
+              Send Message
+            </button>
+          </div>
+        </form>
+        
+        <div class="mt-8 pt-6 border-t border-gray-200 dark:border-slate-600">
+          <p class="text-center text-sm text-gray-600 dark:text-gray-300 mb-4">
+            Prefer direct contact? Reach out via:
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:woutervdm21@gmail.com" class="flex items-center gap-2 text-sky-600 dark:text-amber-400 hover:underline">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              woutervdm21@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/wouter-van-der-merwe-0084a1246/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-sky-600 dark:text-amber-400 hover:underline">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.6 4.08 5.5 2.98 5.5 1.87 5.5 1 4.6 1 3.5 1 2.4 1.87 1.5 2.98 1.5 4.08 1.5 4.98 2.4 4.98 3.5zM.5 8h4.96v12H.5V8zM9.5 8h4.76v1.64h.07c.66-1.25 2.28-2.56 4.7-2.56 5.02 0 5.94 3.31 5.94 7.62V20H19.4v-6.01c0-1.44-.03-3.28-2-3.28-2 0-2.31 1.56-2.31 3.17V20H9.5V8z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="bg-slate-900 text-white relative py-20">
-    <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
-    <form class="bg-slate-700 max-w-xl mx-auto p-6 rounded-lg shadow-lg space-y-4">
-      <input type="text" placeholder="Name" class="bg-slate-600 w-full p-3 rounded border border-slate-500" />
-      <input type="email" placeholder="Email" class="bg-slate-600 w-full p-3 rounded border border-slate-500" />
-      <textarea placeholder="Message" class="bg-slate-600 w-full p-3 rounded border border-slate-500"></textarea>
-      <button type="submit" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">Send</button>
-    </form>
-  </section>
-
-  <footer class="bg-slate-800 text-white text-center py-6">
+  <!-- Footer -->
+  <footer class="text-slate-900 bg-amber-50 dark:bg-slate-800 dark:text-white text-center py-6">
     <p>&copy; <span id="year"></span> Wouter van der Merwe. All rights reserved.</p>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <!-- Local scripts -->
     <script src="script.js"></script>
   </footer>
 
