@@ -1,1 +1,0 @@
-C:\Users\WVanDer\Portfolio\blazor\wwwroot\web.config
