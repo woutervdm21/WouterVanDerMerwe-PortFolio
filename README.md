@@ -26,12 +26,12 @@ This portfolio site was built to highlight my journey as a system developer tran
 
 ## 🗂️ Project Structure
 
-assets/ # CV and downloadable resources
-img/ # Images, logos, and icons
-index.html # Main landing page
-styles.css # Global styling and Tailwind customization
-script.js # Interactive behavior and dynamic elements
-README.md # Project documentation
+- assets/ # CV and downloadable resources
+- img/ # Images, logos, and icons
+- index.html # Main landing page-
+- styles.css # Global styling and Tailwind customization
+- script.js # Interactive behavior and dynamic elements
+- README.md # Project documentation
 
 ## ⚖️ License
 
