@@ -1,0 +1,12 @@
+# Secrets
+api/local.settings.json
+
+# .NET / C# ignores
+**/bin/
+**/obj/
+.vs/
+*.user
+
+# Node/Frontend (if you use npm later)
+node_modules/
+dist/
