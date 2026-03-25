@@ -51,8 +51,8 @@ public async Task<HttpResponseData> Run(
     // 5. Return Response
     var response = req.CreateResponse(success ? HttpStatusCode.Redirect : HttpStatusCode.InternalServerError);
     
-    response.Headers.Add("Content-Type", "application/json");
-    await response.WriteAsJsonAsync(new { success = success, message = success ? "Email sent successfully!" : "Failed to send email." });
+    // Redirect back to your home page or a success page
+    response.Headers.Add("Location", "/success.html"); 
     return response;
 }
 
