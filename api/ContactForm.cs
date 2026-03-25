@@ -13,41 +13,48 @@ public class ContactForm
         _logger = loggerFactory.CreateLogger<ContactForm>();
     }
 
-    [Function("ContactForm")]
-    public async Task<HttpResponseData> Run(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req)
-    {
-        _logger.LogInformation("Processing contact form submission.");
+  [Function("ContactForm")]
+public async Task<HttpResponseData> Run(
+    [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData req)
+{
+    _logger.LogInformation("Processing contact form submission.");
 
-        // 1. Read the Form Data (sent from your HTML form)
-        var content = await req.ReadAsFormDataAsync();
-        string name = content["name"] ?? "Anonymous";
-        string email = content["email"] ?? "No Email";
-        string subject = content["subject"] ?? "No Subject";
-        string message = content["message"] ?? "";
+    // 1. Read the raw body string
+    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 
-        // 2. Pull settings from Environment (local.settings.json)
-        string smtpServer = Environment.GetEnvironmentVariable("SmtpServer") ?? "";
-        int smtpPort = int.Parse(Environment.GetEnvironmentVariable("SmtpPort") ?? "587");
-        string senderEmail = Environment.GetEnvironmentVariable("SenderEmail") ?? "";
-        string senderPassword = Environment.GetEnvironmentVariable("SenderPassword") ?? "";
-        string recipientEmail = Environment.GetEnvironmentVariable("RecipientEmail") ?? "";
+    // 2. Parse the x-www-form-urlencoded string into a dictionary
+    // This handles the "name=Wouter&email=test@test.com" format
+    var formData = requestBody.Split('&')
+        .Select(x => x.Split('='))
+        .ToDictionary(
+            x => Uri.UnescapeDataString(x[0]), 
+            x => x.Length > 1 ? Uri.UnescapeDataString(x[1].Replace("+", " ")) : ""
+        );
 
-        // 3. Send the Email
-        bool success = await SendContactEmailAsync(name, email, subject, message, 
-                                                 smtpServer, smtpPort, senderEmail, 
-                                                 senderPassword, recipientEmail);
+    string name = formData.GetValueOrDefault("name", "Anonymous");
+    string email = formData.GetValueOrDefault("email", "No Email");
+    string subject = formData.GetValueOrDefault("subject", "No Subject");
+    string message = formData.GetValueOrDefault("message", "");
 
-        // 4. Return Response
-        var response = req.CreateResponse(success ? HttpStatusCode.OK : HttpStatusCode.InternalServerError);
-        
-        // This tells the browser where to go after the user clicks "Submit"
-        // You can create a "success.html" in your frontend folder
-        response.Headers.Add("Location", "/success.html"); 
-        response.StatusCode = HttpStatusCode.Redirect;
+    // 3. Pull settings from Environment
+    string smtpServer = Environment.GetEnvironmentVariable("SmtpServer") ?? "";
+    int smtpPort = int.Parse(Environment.GetEnvironmentVariable("SmtpPort") ?? "587");
+    string senderEmail = Environment.GetEnvironmentVariable("SenderEmail") ?? "";
+    string senderPassword = Environment.GetEnvironmentVariable("SenderPassword") ?? "";
+    string recipientEmail = Environment.GetEnvironmentVariable("RecipientEmail") ?? "";
 
-        return response;
-    }
+    // 4. Send the Email
+    bool success = await SendContactEmailAsync(name, email, subject, message, 
+                                             smtpServer, smtpPort, senderEmail, 
+                                             senderPassword, recipientEmail);
+
+    // 5. Return Response
+    var response = req.CreateResponse(success ? HttpStatusCode.Redirect : HttpStatusCode.InternalServerError);
+    
+    // Redirect back to your home page or a success page
+    response.Headers.Add("Location", "/index.html"); 
+    return response;
+}
 
     private async Task<bool> SendContactEmailAsync(string visitorName, string visitorEmail, string subject, string message, 
         string server, int port, string user, string pass, string receiver)
